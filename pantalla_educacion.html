@@ -2,53 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pantalla_lógica</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
+    <script src="./script.js"></script>
 </head>
-<a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
 
 <body>
-    <p>
-        <ol>¿Cuántos huesos tiene el cuerpo humano de un adulto?
-            <li><input type="radio" name="preg1_educacion" value="1" />350</li>
-            <li><input type="radio" name="preg1_educacion" value="2" />206</li>
-            <li><input type="radio" name="preg1_educacion" value="3" />300</li>
-        </ol>
-        <br>
-        <ol>¿Cuál era el nombre del Rey Jorge VI (Reino Unido 1895-1952)?
-            <li><input type="radio" name="preg2_educacion" value="1" />Alberto</li>
-            <li><input type="radio" name="preg2_educacion" value="2" />Jorge</li>
-            <li><input type="radio" name="preg2_educacion" value="3" />Simón</li>
-        </ol>
-        <br>
-        <ol>¿Cuál fue el primer metal que empleó el hombre?
-            <li><input type="radio" name="preg3_educacion" value="1" />Cobre</li>
-            <li><input type="radio" name="preg3_educacion" value="2" />Plata</li>
-            <li><input type="radio" name="preg3_educacion" value="3" />Bronce</li>
-        </ol>
-        <br>
-        <ol>¿Qué es un ovíparo?
-            <li><input type="radio" name="preg4_educacion" value="1" />Animal que vuela</li>
-            <li><input type="radio" name="preg4_educacion" value="2" />Animal que nace de un huevo</li>
-            <li><input type="radio" name="preg4_educacion" value="3" />Cría de hipopótamo</li>
-        </ol>
-        <br>
-        <ol>¿A qué famoso filósofo se le atribuye la frase “solo sé que nada sé”?
-            <li><input type="radio" name="preg5_educacion" value="1" />Sócrates</li>
-            <li><input type="radio" name="preg5_educacion" value="2" />Platón</li>
-            <li><input type="radio" name="preg5_educacion" value="3" />Flavio Josefo</li>
-        </ol>
 
+    <h1>Haz seleccionado EDUCACIÓN</h1>
+    <hr />
+    <form>
+        <p>¿Cuántos huesos tiene el cuerpo humano de un adulto?</p>
+        <p class="pregunta1">
+            <input type="radio" name="pregunta1" id="p11" />350
+        </p>
+        <p class="pregunta1">
+            <input type="radio" name="pregunta1" id="p12" />206
+        </p>
+        <p class="pregunta1">
+            <input type="radio" name="pregunta1" id="p13" />300
+        </p>
 
-    </p>
+        <p>¿Cuál era el nombre del Rey Jorge VI (Reino Unido 1895-1952)?</p>
+        <p class="pregunta2">
+            <input type="radio" name="pregunta2" id="p21" />Alberto
+        </p>
+        <p class="pregunta2">
+            <input type="radio" name="pregunta2" id="p22" />Jorge
+        </p>
+        <p class="pregunta2">
+            <input type="radio" name="pregunta2" id="p23" />Simón
+        </p>
 
-      <div>
-        <form action="./pantalla_categoria.html" method="POST">
-        <input type="submit" value="Enviar">
-        </form>
-    </div>
-    
+        <p>¿Cuál fue el primer metal que empleó el hombre?</p>
+        <p class="pregunta3">
+            <input type="radio" name="pregunta3" id="p31" />Plata
+        </p>
+        <p class="pregunta3">
+            <input type="radio" name="pregunta3" id="p32" />Bronce
+        </p>
+        <p class="pregunta3">
+            <input type="radio" name="pregunta3" id="p33" />Cobre
+        </p>
+
+        <p>¿Qué es un ovíparo?</p>
+        <p class="pregunta4">
+            <input type="radio" name="pregunta4" id="p41" />Animal que vuela
+        </p>
+        <p class="pregunta4">
+            <input type="radio" name="pregunta4" id="p42" />Animal que nace de un huevo
+        </p>
+        <p class="pregunta4">
+            <input type="radio" name="pregunta4" id="p43" />Cría de hipopótamo
+        </p>
+
+        <p>
+            ¿A qué famoso filósofo se le atribuye la frase “solo sé que nada sé”?
+        </p>
+        <p class="pregunta5">
+            <input type="radio" name="pregunta5" id="p51" />Sócrates
+        </p>
+        <p class="pregunta5">
+            <input type="radio" name="pregunta5" id="p52" />Platón
+        </p>
+        <p class="pregunta5">
+            <input type="radio" name="pregunta5" id="p53" />Flavio Josefo
+        </p>
+
+        <hr />
+
+        <p>
+            <input type="button" value=" R E S U L T A D O " onclick="resultado_educacion()" />
+        </p>
+        <h2 id="resultado">Aciertos: 0</h2>
+    </form>
 </body>
 
 </html>

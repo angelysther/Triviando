@@ -4,36 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pantalla_2</title>
+    <title>pantalla_categoria</title>
+    <a class="button_atras" href="./index.html">ATRÁS</a>
 </head>
-
-<a class="button_atras" href="./index.html">ATRÁS</a>
 
 <body>
     <div>
-        <!--<input type="text" id="aqui">  -->
         <h2 id="usuario"></h2>
-
-
-        <script type="text/javascript">
-            var url_string = window.location.href; //
-            var url = new URL(url_string);
-
-            var c = url.searchParams.get("nombre");
-
-            if (/^([0-9])*$/.test(c)) {
-                alert("Nombre invalido " + c)
-            }
-
-            //document.getElementById("aqui").value = c; 
-            document.getElementById("usuario").innerHTML = "Hola, " + c;
-        </script>
     </div>
+
     <h1>Selecciona la categoria</h1>
 
-    <a class="button_logica" href="./pantallaLogica2.html">LÓGICA</a>
+    <a class="button_logica" href="./pantalla_logica.html">LÓGICA</a>
     <BR></BR>
     <a class="button_educacion" href="./pantalla_educacion.html">EDUCACIÓN</a>
+
+
+    <script type="text/javascript">
+        var url_string = window.location.href; //
+        var url = new URL(url_string);
+        var usuario_url = url.searchParams.get("nombre");
+
+        if (/^([0-9])*$/.test(usuario_url)) {
+            alert("Nombre invalido " + usuario_url)
+        }
+        document.getElementById("usuario").innerHTML = "Hola, " + usuario_url;
+    </script>
 </body>
 
 </html>
