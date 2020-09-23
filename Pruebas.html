@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="pregunta"></div>
+    <div id="respuestas"></div>
+    <input type="button" value="Siguiente" onclick "comprobar()">
+
+    <script>
+        var preguntas = [
+            "¿Cuántos huesos tiene el cuerpo humano de un adulto?",
+            "¿Cuál era el nombre del Rey Jorge VI (Reino Unido 1895-1952)?",
+            "¿Cuál fue el primer metal que empleó el hombre?",
+            "¿Qué es un ovíparo?",
+            "¿A qué famoso filósofo se le atribuye la frase “solo sé que nada sé”?"
+        ];
+
+        var respuestas = [
+            ["350", "206", "300"],
+            ["Alberto", "Jorge", "Simón"],
+            ["Cobre", "Plata", "Bronce"],
+            ["Animal que vuela", "Animal que nace de un huevo", "Cría de hipopótamo"],
+            ["Sócrates", "Platón", "Flavio Josefo"]
+        ];
+
+        var indice_aleatorio = Math.floor(Math.random() * preguntas.length);
+
+        var respuestas_posibles = respuestas[indice_aleatorio];
+
+        var txt_respuestas = "";
+        for (i in respuestas_posibles) {
+            txt_respuestas += '<input type="radio"><label>' + respuestas_posibles[i] + '</label><br>';
+        }
+
+        document.getElementById("respuestas").innerHTML = txt_respuestas;
+        document.getElementById("pregunta").innerHTML = preguntas[indice_aleatorio];
+    </script>
+
+</body>
+
+</html>

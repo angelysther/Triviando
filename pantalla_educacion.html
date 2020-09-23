@@ -6,42 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pantalla_lógica</title>
 </head>
-<a class="button_atras" href="./pantalla_2.html">ATRÁS</a>
+<a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
 
 <body>
     <p>
         <ol>¿Cuántos huesos tiene el cuerpo humano de un adulto?
-            <li>350</li>
-            <li>206</li>
-            <li>300</li>
+            <li><input type="radio" name="preg1_educacion" value="1" />350</li>
+            <li><input type="radio" name="preg1_educacion" value="2" />206</li>
+            <li><input type="radio" name="preg1_educacion" value="3" />300</li>
         </ol>
         <br>
         <ol>¿Cuál era el nombre del Rey Jorge VI (Reino Unido 1895-1952)?
-            <li>Alberto</li>
-            <li>Jorge</li>
-            <li>Simón</li>
+            <li><input type="radio" name="preg2_educacion" value="1" />Alberto</li>
+            <li><input type="radio" name="preg2_educacion" value="2" />Jorge</li>
+            <li><input type="radio" name="preg2_educacion" value="3" />Simón</li>
         </ol>
         <br>
         <ol>¿Cuál fue el primer metal que empleó el hombre?
-            <li>Cobre</li>
-            <li>Plata</li>
-            <li>Bronce</li>
+            <li><input type="radio" name="preg3_educacion" value="1" />Cobre</li>
+            <li><input type="radio" name="preg3_educacion" value="2" />Plata</li>
+            <li><input type="radio" name="preg3_educacion" value="3" />Bronce</li>
         </ol>
         <br>
         <ol>¿Qué es un ovíparo?
-            <li>Animal que vuela</li>
-            <li>Animal que nace de un huevo</li>
-            <li>Cría de hipopótamo</li>
+            <li><input type="radio" name="preg4_educacion" value="1" />Animal que vuela</li>
+            <li><input type="radio" name="preg4_educacion" value="2" />Animal que nace de un huevo</li>
+            <li><input type="radio" name="preg4_educacion" value="3" />Cría de hipopótamo</li>
         </ol>
         <br>
         <ol>¿A qué famoso filósofo se le atribuye la frase “solo sé que nada sé”?
-            <li>Sócrates</li>
-            <li>Platón</li>
-            <li>Flavio Josefo</li>
+            <li><input type="radio" name="preg5_educacion" value="1" />Sócrates</li>
+            <li><input type="radio" name="preg5_educacion" value="2" />Platón</li>
+            <li><input type="radio" name="preg5_educacion" value="3" />Flavio Josefo</li>
         </ol>
 
 
     </p>
+
+      <div>
+        <form action="./pantalla_categoria.html" method="POST">
+        <input type="submit" value="Enviar">
+        </form>
+    </div>
+    
 </body>
 
 </html>

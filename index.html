@@ -1,13 +1,16 @@
-</html>
-<!DOCTYPE html>
-<html lang="en">
 
+<!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triviando</title>
     <link href="./style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function obtenerdatos() {
+            var nombre = document.getElementById('nombre').value;
 
+            document.registro.nombreobtenido.value = nom
+
+        }
+    </script>
 </head>
 
 <body>
@@ -15,20 +18,18 @@
     <h1>Triviando</h1>
     <img src="./Imagenes/logo1.jpg" alt="logo">
 
-
     <div>
-        <form action="./pantalla_2.html" method="GET">
+        <form action="pantalla_categoria.html" method="GET">
             <label for="Nombre">Ingrese su nombre:</label>
             <BR></BR>
-            <input type="text" id="fname" name="fname" value="">
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
             <BR></BR>
             <input type="submit" value="INICIAR">
         </form>
     </div>
 
-
-
     <script src="./script.js"></script>
+
 </body>
 
 </html>
