@@ -5,79 +5,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
     <script src="./script.js"></script>
+
+
 </head>
 
-<body>
+<body onload="onloadFunction()">
+    <a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
+    <h2 id="usuario"></h2>
 
-    <h1>Haz seleccionado LÓGICA</h1>
-    <hr />
-    <form>
-        <p>¿Qué pasó ayer en París de 6 a 7?</p>
-        <p class="pregunta1">
-            <input type="radio" name="pregunta1" id="p11" />Un paseo por el río sena
-        </p>
-        <p class="pregunta1">
-            <input type="radio" name="pregunta1" id="p12" />Una hora
-        </p>
-        <p class="pregunta1">
-            <input type="radio" name="pregunta1" id="p13" />Coches camino a casa
-        </p>
 
-        <p>¿Quién es el hermano del hijo de mi padre?</p>
-        <p class="pregunta2">
-            <input type="radio" name="pregunta2" id="p21" />Mi hermano
-        </p>
-        <p class="pregunta2">
-            <input type="radio" name="pregunta2" id="p22" />Mi tio
-        </p>
-        <p class="pregunta2">
-            <input type="radio" name="pregunta2" id="p23" />Mi primo
-        </p>
+    <div id="preguntauno">
+        <p class="questions">¿Qué pasó ayer en París de 6 a 7?</p>
+        <input type="radio" id="r_l_11" name="question1" value="Un paseo por el río sena"> Un paseo por el río sena<br>
+        <input type="radio" id="r_l_12" name="question1" value="Una hora"> Una hora<br>
+        <input type="radio" id="r_l_13" name="question1" value="Coches camino a casa"> Coches camino a casa<br>
+        <button onclick="myFunctionAvanzarSegunda()">Avanzar</button>
+    </div>
+    <div id="preguntados">
+        <p class="questions">Quien es el hermano del hijo de mi padre?</p>
+        <input type="radio" id="r_l_21" name="question2" value="Mi hermano"> Mi hermano<br>
+        <input type="radio" id="r_l_22" name="question2" value="Mi tío"> Mi tío<br>
+        <input type="radio" id="r_l_23" name="question2" value="Mi primo"> Mi primo<br>
+        <button onclick="myFunctionAtras2()">Atras</button>
+        <button onclick="myFunctionAvanzarTercera()">Avanzar</button>
+    </div>
+    <div id="preguntatres">
+        <p class="questions">¿En qué lugar el jueves va antes que el miércoles?</p>
+        <input type="radio" id="r_l_31" name="question3" value="En el diccionario"> En el diccionario<br>
+        <input type="radio" id="r_l_32" name="question3" value="En el calendario">En el calendario<br>
+        <input type="radio" id="r_l_33" name="question3" value="En los libros de historia">En los libros de historia<br>
+        <button onclick="myFunctionAtras3()">Atras</button>
+        <button onclick="myFunctionAvanzarCuarta()">Avanzar</button>
+    </div>
+    <div id="preguntacuatro">
+        <p class="questions">¿Qué meses tienen 28 días?</p>
+        <input type="radio" id="r_l_41" name="question4" value="Febrero y Diciembre">Febrero y Diciembre<br>
+        <input type="radio" id="r_l_42" name="question4" value="Febrero">Febrero<br>
+        <input type="radio" id="r_l_43" name="question4" value="Todos tienen 28 días">Todos tienen 28 días<br>
+        <button onclick="myFunctionAtras4()">Atras</button>
+        <button onclick="myFunctionAvanzarQuinta()">Avanzar</button>
+    </div>
 
-        <p>¿En qué lugar el jueves va antes que el miércoles?</p>
-        <p class="pregunta3">
-            <input type="radio" name="pregunta3" id="p31" />En el diccionario
-        </p>
-        <p class="pregunta3">
-            <input type="radio" name="pregunta3" id="p32" />En el calendario
-        </p>
-        <p class="pregunta3">
-            <input type="radio" name="pregunta3" id="p33" />En los libros de historia
-        </p>
+    <div id="preguntacinco">
+        <p class="questions">¿En que país se invento el sombrero Panameño?</p>
+        <input type="radio" id="r_l_51" name="question5" value="Panamá">Panamá<br>
+        <input type="radio" id="r_l_52" name="question5" value="Brasil">Brasil<br>
+        <input type="radio" id="r_l_53" name="question5" value="Ecuador">Ecuador<br>
+        <button onclick="myFunctionAtras5()">Atras</button>
 
-        <p>¿Qué meses tienen 28 días?</p>
-        <p class="pregunta4">
-            <input type="radio" name="pregunta4" id="p41" />Febrero y Diciembre
-        </p>
-        <p class="pregunta4">
-            <input type="radio" name="pregunta4" id="p42" />Febrero
-        </p>
-        <p class="pregunta4">
-            <input type="radio" name="pregunta4" id="p43" />Todos tienen 28 días
-        </p>
+    </div>
 
-        <p>
-            ¿En que país se invento el sombrero Panameño?
-        </p>
-        <p class="pregunta5">
-            <input type="radio" name="pregunta5" id="p51" />Panamá
-        </p>
-        <p class="pregunta5">
-            <input type="radio" name="pregunta5" id="p52" />Brasil
-        </p>
-        <p class="pregunta5">
-            <input type="radio" name="pregunta5" id="p53" />Ecuador
-        </p>
 
-        <hr />
+    <p>
+        <input id="boton_resultado" type="button" value=" R E S U L T A D O " onclick="myFunctionAvanzarSexta()" />
+    </p>
+    <h2 id="resultado">Respuestas Correctas: 0</h2>
+    <input id="boton_retornar" type="button" value=" Volver a Jugar " onclick="retornar_categoria()" />
 
-        <p>
-            <input type="button" value=" R E S U L T A D O " onclick="resultado_logica()" />
-        </p>
-        <h2 id="resultado">Respuestas Correctas: 0</h2>
-    </form>
+    <script type="text/javascript">
+        var url_string = window.location.href; //
+        var url = new URL(url_string);
+        var usuario_url = url.searchParams.get("nombre");
+
+        if (/^([0-9])*$/.test(usuario_url)) {
+            alert("Nombre invalido " + usuario_url)
+            location.href = "/"
+        }
+        document.getElementById("usuario").innerHTML = usuario_url + ", Haz seleccionado LÓGICA";
+    </script>
 </body>
 
 </html>

@@ -5,19 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pantalla_categoria</title>
-    <a class="button_atras" href="./index.html">ATRÁS</a>
+    <script src="./script.js"></script>
+
 </head>
 
 <body>
+
+    <a class="button_atras" href="./index.html">ATRÁS</a>
     <div>
         <h2 id="usuario"></h2>
     </div>
 
     <h1>Selecciona la categoria</h1>
-
-    <a class="button_logica" href="./pantalla_logica.html">LÓGICA</a>
+    <button onclick="pantalla_logica()">LÓGICA</button>
     <BR></BR>
-    <a class="button_educacion" href="./pantalla_educacion.html">EDUCACIÓN</a>
+    <button onclick="pantalla_educacion()">EDUCACIÓN</button>
 
 
     <script type="text/javascript">
@@ -27,9 +29,11 @@
 
         if (/^([0-9])*$/.test(usuario_url)) {
             alert("Nombre invalido " + usuario_url)
+            location.href = "/"
         }
         document.getElementById("usuario").innerHTML = "Hola, " + usuario_url;
     </script>
+
 </body>
 
 </html>
