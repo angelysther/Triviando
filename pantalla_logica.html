@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>pantalla_logica</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
     <script src="./script.js"></script>
 
 
 </head>
 
 <body onload="onloadFunction()">
-    <a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
-    <h2 id="usuario"></h2>
+    <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras_pantalla_logica" onclick="retornar_categoria()">
+    <h2 class="h2_logica" id="usuario"></h2>
 
 
     <div id="preguntauno">
@@ -20,31 +22,31 @@
         <input type="radio" id="r_l_11" name="question1" value="Un paseo por el río sena"> Un paseo por el río sena<br>
         <input type="radio" id="r_l_12" name="question1" value="Una hora"> Una hora<br>
         <input type="radio" id="r_l_13" name="question1" value="Coches camino a casa"> Coches camino a casa<br>
-        <button onclick="myFunctionAvanzarSegunda()">Avanzar</button>
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar" onclick="myFunctionAvanzarSegunda()">
     </div>
     <div id="preguntados">
         <p class="questions">Quien es el hermano del hijo de mi padre?</p>
         <input type="radio" id="r_l_21" name="question2" value="Mi hermano"> Mi hermano<br>
         <input type="radio" id="r_l_22" name="question2" value="Mi tío"> Mi tío<br>
         <input type="radio" id="r_l_23" name="question2" value="Mi primo"> Mi primo<br>
-        <button onclick="myFunctionAtras2()">Atras</button>
-        <button onclick="myFunctionAvanzarTercera()">Avanzar</button>
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras" onclick="myFunctionAtras2()">
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar1" onclick="myFunctionAvanzarTercera()">
     </div>
     <div id="preguntatres">
         <p class="questions">¿En qué lugar el jueves va antes que el miércoles?</p>
         <input type="radio" id="r_l_31" name="question3" value="En el diccionario"> En el diccionario<br>
         <input type="radio" id="r_l_32" name="question3" value="En el calendario">En el calendario<br>
         <input type="radio" id="r_l_33" name="question3" value="En los libros de historia">En los libros de historia<br>
-        <button onclick="myFunctionAtras3()">Atras</button>
-        <button onclick="myFunctionAvanzarCuarta()">Avanzar</button>
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras1" onclick="myFunctionAtras3()">
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar2" onclick="myFunctionAvanzarCuarta()">
     </div>
     <div id="preguntacuatro">
         <p class="questions">¿Qué meses tienen 28 días?</p>
         <input type="radio" id="r_l_41" name="question4" value="Febrero y Diciembre">Febrero y Diciembre<br>
         <input type="radio" id="r_l_42" name="question4" value="Febrero">Febrero<br>
         <input type="radio" id="r_l_43" name="question4" value="Todos tienen 28 días">Todos tienen 28 días<br>
-        <button onclick="myFunctionAtras4()">Atras</button>
-        <button onclick="myFunctionAvanzarQuinta()">Avanzar</button>
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras2" onclick="myFunctionAtras4()">
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar3" onclick="myFunctionAvanzarQuinta()">
     </div>
 
     <div id="preguntacinco">
@@ -52,10 +54,8 @@
         <input type="radio" id="r_l_51" name="question5" value="Panamá">Panamá<br>
         <input type="radio" id="r_l_52" name="question5" value="Brasil">Brasil<br>
         <input type="radio" id="r_l_53" name="question5" value="Ecuador">Ecuador<br>
-        <button onclick="myFunctionAtras5()">Atras</button>
-
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras3" onclick="myFunctionAtras5()">
     </div>
-
 
     <p>
         <input id="boton_resultado" type="button" value=" R E S U L T A D O " onclick="myFunctionAvanzarSexta()" />

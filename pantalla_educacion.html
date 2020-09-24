@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pantalla_categoria</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
     <script src="./script.js"></script>
 
 </head>
 </head>
 
 <body onload="onloadFunction()">
-    <a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
-    <h2 id="usuario"></h2>
+    <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras_pantalla_educacion" onclick="retornar_categoria()">
+    <h2 class="h2_educacion" id="usuario"></h2>
 
 
     <div id="preguntauno">
@@ -20,38 +22,38 @@
         <input type="radio" id="r_e_11" name="question1" value="350">350<br>
         <input type="radio" id="r_e_12" name="question1" value="206">206<br>
         <input type="radio" id="r_e_13" name="question1" value="300">300<br>
-        <button onclick="myFunctionAvanzarSegunda()">Avanzar</button>
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar" onclick="myFunctionAvanzarSegunda()">
     </div>
     <div id="preguntados">
         <p class="questions">¿Cuál era el nombre del Rey Jorge VI (Reino Unido 1895-1952)?</p>
         <input type="radio" id="r_e_21" name="question2" value="Alberto"> Alberto<br>
         <input type="radio" id="r_e_22" name="question2" value="Jorge">Jorge<br>
         <input type="radio" id="r_e_23" name="question2" value="Simon">Simon<br>
-        <button onclick="myFunctionAtras1()">Atras</button>
-        <button onclick="myFunctionAvanzarTercera()">Avanzar</button>
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras" onclick="myFunctionAtras2()">
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar1" onclick="myFunctionAvanzarTercera()">
     </div>
     <div id="preguntatres">
         <p class="questions">¿Cuál fue el primer metal que empleó el hombre?</p>
         <input type="radio" id="r_e_31" name="question3" value="Plata">Plata<br>
         <input type="radio" id="r_e_32" name="question3" value="Bronce">Bronce<br>
         <input type="radio" id="r_e_33" name="question3" value="Cobre">Cobre<br>
-        <button onclick="myFunctionAtras2()">Atras</button>
-        <button onclick="myFunctionAvanzarCuarta()">Avanzar</button>
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras1" onclick="myFunctionAtras3()">
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar2" onclick="myFunctionAvanzarCuarta()">
     </div>
     <div id="preguntacuatro">
         <p class="questions">¿Qué es un ovíparo?</p>
         <input type="radio" id="r_e_41" name="question4" value="Animal que vuela">Animal que vuela<br>
         <input type="radio" id="r_e_42" name="question4" value="Animal que nace de un huevo">Animal que nace de un huevo<br>
         <input type="radio" id="r_e_43" name="question4" value="Cría de hipopótamo">Cría de hipopótamo<br>
-        <button onclick="myFunctionAtras3()">Atras</button>
-        <button onclick="myFunctionAvanzarQuinta()">Avanzar</button>
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras2" onclick="myFunctionAtras4()">
+        <input type="image" src="flecha_adelante.png" class="flecha_avanza" id="avanzar3" onclick="myFunctionAvanzarQuinta()">
     </div>
     <div id="preguntacinco">
         <p class="questions">¿A qué famoso filósofo se le atribuye la frase “solo sé que nada sé”?</p>
         <input type="radio" id="r_e_51" name="question4" value="Sócrates">Sócrates<br>
         <input type="radio" id="r_e_52" name="question4" value="Platón">Platón<br>
         <input type="radio" id="r_e_53" name="question4" value="Flavio Josefo">Flavio Josefo<br>
-        <button onclick="myFunctionAtras4()">Atras</button>
+        <input type="image" src="flecha_atras.png" class="flecha_atras" id="atras3" onclick="myFunctionAtras5()">
     </div>
     <p>
         <input id="boton_resultado" type="button" value=" R E S U L T A D O " onclick="myFunctionAvanzarSexta()" />

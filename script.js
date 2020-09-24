@@ -55,19 +55,49 @@ function myFunctionAvanzarSexta() {
     if ((null != document.getElementById("r_l_53") && document.getElementById("r_l_53").checked) ||
         (null != document.getElementById("r_e_51") && document.getElementById("r_e_51").checked)) {
         resultados = resultados + 1;
-
     }
-    document.getElementById("preguntacinco").style.display = "none";
+    document.getElementById("atras").style.display = "none";
+    document.getElementById("atras1").style.display = "none";
+    document.getElementById("atras2").style.display = "none";
+    document.getElementById("atras3").style.display = "none";
+    document.getElementById("avanzar").style.display = "none";
+    document.getElementById("avanzar1").style.display = "none";
+    document.getElementById("avanzar2").style.display = "none";
+    document.getElementById("avanzar3").style.display = "none";
+    document.getElementById("preguntauno").style.display = "block";
+    document.getElementById("preguntados").style.display = "block";
+    document.getElementById("preguntatres").style.display = "block";
+    document.getElementById("preguntacuatro").style.display = "block";
+    document.getElementById("preguntacinco").style.display = "block";
     document.getElementById("boton_resultado").style.display = "none";
     console.log("resultado_5  " + resultados);
     document.getElementById("resultado").style.display = "block";
     document.getElementById("boton_retornar").style.display = "block";
     document.getElementById("resultado").innerHTML = "resultados: " + resultados;
+    switch (resultados) {
+        case 0:
+            alert('Ganar ya no es solo el resultado, es parte del proceso');
+            break;
+        case 1:
+            alert('Los campeones siguen jugando hasta que lo hacen bien');
+            break;
+        case 2:
+            alert('Los ganadores hacen lo que los perdedores no. Seguir intentando');
+            break;
+        case 3:
+            alert('Los ganadores piensan constantemente en términos de “yo puedo, lo haré y lo soy”.');
+            break;
+        case 4:
+            alert('No te rindas. Sufre ahora y vive el resto de tu vida como un campeón');
+            break;
+        default:
+            alert('Ganar no siempre significa ser el primero. Ganar significa que lo estás haciendo mejor de lo que nunca antes lo has hecho.FELICIDADES');
+    }
+
 }
 
 
 function myFunctionAtras() {
-
     document.getElementById("preguntauno").style.display = "block";
     document.getElementById("preguntados").style.display = "none";
 }

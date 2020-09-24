@@ -5,21 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pantalla_categoria</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
     <script src="./script.js"></script>
 
 </head>
 
 <body>
 
-    <a class="button_atras" href="./index.html">ATRÁS</a>
-    <div>
-        <h2 id="usuario"></h2>
+    <div class="enlace"></div>
+    <a class="flecha_atras_categoria" href="./index.html"><img src="flecha_atras.png" alt="atras " width="100" height="100" /></a>
+
     </div>
 
-    <h1>Selecciona la categoria</h1>
-    <button onclick="pantalla_logica()">LÓGICA</button>
-    <BR></BR>
-    <button onclick="pantalla_educacion()">EDUCACIÓN</button>
+    <h2 id="usuario"></h2>
+
+
+    <h1 id="h1_categoria">Selecciona la categoria</h1>
+    <div class="contenedor">
+        <button id="boton_logica" type="button" onclick="pantalla_logica()">LÓGICA</button>
+
+        <button id="boton_educacion" type="button" onclick="pantalla_educacion()">EDUCACIÓN</button>
+    </div>
+
 
 
     <script type="text/javascript">
