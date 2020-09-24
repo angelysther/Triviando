@@ -1,76 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pantalla_categoria</title>
-    <script src="./script.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<style>
+		body {
+			background-color: #361352;
+		}
 
-</head>
-</head>
+		</style <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"><script src="main.js"></script><title>pantalla_categoria</title><script src="./script.js"></script></head><body onload="onloadFunction()"><button onclick="retornar_categoria()">ATRÁS</button><h2 id="usuario"></h2><h1 style="font-size:35px;color:#FFFFFF";
+		>¡Haz seleccionado la categoría educación !</h1><div id="preguntauno"><p class="questions">¿Cuántos huesos tiene el cuerpo humano de un adulto?</p><input type="radio" id="mc" name="question1" value="350">350<br><input type="radio" id="mc" name="question1" value="206">203<br><input type="radio" id="mc" name="question1" value="300">300<br><input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarSegunda()" width="70" height="70"/></div><div id="preguntados"><p class="questions">¿Cuál era el nombre del Rey Jorge VI (Reino Unido 1895-1952)?</p><input type="radio" id="mc" name="question2" value="Alberto">Alberto<br><input type="radio" id="mc" name="question2" value="Jorge">Jorge<br><input type="radio" id="mc" name="question2" value="Simon">Simon<br><input type="image" src="flecha_atras.png" onclick="myFunctionAtras2()()" width="70" height="70"/><input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarTercera()" width="70" height="70"/></div><div id="preguntatres"><p class="questions">¿Cuál fue el primer metal que empleó el hombre?</p><input type="radio" id="mc" name="question3" value="Plata">Plata<br><input type="radio" id="mc" name="question3" value="Bronce">Bronce<br><input type="radio" id="mc" name="question3" value="Cobre">Cobre<br><input type="image" src="flecha_atras.png" onclick="myFunctionAtras3()" width="70" height="70"/><input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarCuarta()" width="70" height="70"/></div><div id="preguntacuatro"><p class="questions">¿Qué es un ovíparo?</p><input type="radio" id="mc" name="question4" value="Animal que vuela">Animal que vuela<br><input type="radio" id="mc" name="question4" value="Animal que nace de un huevo">Animal que nace de un huevo<br><input type="radio" id="mc" name="question4" value="Cría de hipopótamo">Cría de hipopótamo<br><input type="image" src="flecha_atras.png" onclick="myFunctionAtras4()" width="70" height="70"/><input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarQuinta()" width="70" height="70"/></div><div id="preguntacinco"><p class="questions">¿A qué famoso filósofo se le atribuye la frase “solo sé que nada sé”?</p><input type="radio" id="mc" name="question4" value="Sócrates">Sócrates<br><input type="radio" id="mc" name="question4" value="Platón">Platón<br><input type="radio" id="mc" name="question4" value="Flavio Josefo">Flavio Josefo<br><input type="image" src="flecha_atras.png" onclick="myFunctionAtras5()" width="70" height="70"/></div><p><input id="boton_resultado" type="button" value=" R E S U L T A D O " onclick="myFunctionAvanzarSexta()" /></p><h2 id="resultado">Respuestas Correctas: 0</h2><input id="boton_retornar" type="button" value=" Volver a Jugar " onclick="retornar_categoria()" /><script type="text/javascript">var url_string=window.location.href; //
+		var url=new URL(url_string);
+		var usuario_url=url.searchParams.get("nombre");
 
-<body onload="onloadFunction()">
-    <a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
-    <h2 id="usuario"></h2>
+		if (/^([0-9])*$/.test(usuario_url)) {
+			alert("Nombre invalido " + usuario_url) location.href="/"
+		}
 
-
-    <div id="preguntauno">
-        <p class="questions">¿Cuántos huesos tiene el cuerpo humano de un adulto?</p>
-        <input type="radio" id="r_e_11" name="question1" value="350">350<br>
-        <input type="radio" id="r_e_12" name="question1" value="206">206<br>
-        <input type="radio" id="r_e_13" name="question1" value="300">300<br>
-        <button onclick="myFunctionAvanzarSegunda()">Avanzar</button>
-    </div>
-    <div id="preguntados">
-        <p class="questions">¿Cuál era el nombre del Rey Jorge VI (Reino Unido 1895-1952)?</p>
-        <input type="radio" id="r_e_21" name="question2" value="Alberto"> Alberto<br>
-        <input type="radio" id="r_e_22" name="question2" value="Jorge">Jorge<br>
-        <input type="radio" id="r_e_23" name="question2" value="Simon">Simon<br>
-        <button onclick="myFunctionAtras1()">Atras</button>
-        <button onclick="myFunctionAvanzarTercera()">Avanzar</button>
-    </div>
-    <div id="preguntatres">
-        <p class="questions">¿Cuál fue el primer metal que empleó el hombre?</p>
-        <input type="radio" id="r_e_31" name="question3" value="Plata">Plata<br>
-        <input type="radio" id="r_e_32" name="question3" value="Bronce">Bronce<br>
-        <input type="radio" id="r_e_33" name="question3" value="Cobre">Cobre<br>
-        <button onclick="myFunctionAtras2()">Atras</button>
-        <button onclick="myFunctionAvanzarCuarta()">Avanzar</button>
-    </div>
-    <div id="preguntacuatro">
-        <p class="questions">¿Qué es un ovíparo?</p>
-        <input type="radio" id="r_e_41" name="question4" value="Animal que vuela">Animal que vuela<br>
-        <input type="radio" id="r_e_42" name="question4" value="Animal que nace de un huevo">Animal que nace de un huevo<br>
-        <input type="radio" id="r_e_43" name="question4" value="Cría de hipopótamo">Cría de hipopótamo<br>
-        <button onclick="myFunctionAtras3()">Atras</button>
-        <button onclick="myFunctionAvanzarQuinta()">Avanzar</button>
-    </div>
-    <div id="preguntacinco">
-        <p class="questions">¿A qué famoso filósofo se le atribuye la frase “solo sé que nada sé”?</p>
-        <input type="radio" id="r_e_51" name="question4" value="Sócrates">Sócrates<br>
-        <input type="radio" id="r_e_52" name="question4" value="Platón">Platón<br>
-        <input type="radio" id="r_e_53" name="question4" value="Flavio Josefo">Flavio Josefo<br>
-        <button onclick="myFunctionAtras4()">Atras</button>
-    </div>
-    <p>
-        <input id="boton_resultado" type="button" value=" R E S U L T A D O " onclick="myFunctionAvanzarSexta()" />
-    </p>
-    <h2 id="resultado">Respuestas Correctas: 0</h2>
-    <input id="boton_retornar" type="button" value=" Volver a Jugar " onclick="retornar_categoria()" />
-
-    <script type="text/javascript">
-        var url_string = window.location.href; //
-        var url = new URL(url_string);
-        var usuario_url = url.searchParams.get("nombre");
-
-        if (/^([0-9])*$/.test(usuario_url)) {
-            alert("Nombre invalido " + usuario_url)
-            location.href = "/"
-        }
-        document.getElementById("usuario").innerHTML = usuario_url + ", Haz seleccionado EDUCACIÓN";
-    </script>
-</body>
-
-
-</html>
+		document.getElementById("usuario").innerHTML=usuario_url+", Haz seleccionado EDUCACIÓN";
+		</script></body></html>

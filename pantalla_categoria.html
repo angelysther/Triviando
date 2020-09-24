@@ -1,39 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pantalla_categoria</title>
-    <script src="./script.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<style>
+		body {
+			background-color: #361352;
+		}
 
-</head>
+		</style <link href="https://fonts.google.com/specimen/Quicksand" rel="stylesheet" type="text/css"><title>Selección de categoria</title><meta name="viewport" content="width=device-width, initial-scale=1.0"><script src="./script.js"></script></head>
+    <input type="image" onclick="history.back()" src="flecha_atras.png" width="70" height="70"><body><div><h2 id="usuario"></h2></div><h1 style="font-size:60px;color:#E87C19";
+		>Selecciona la categoría</h1><button class="button_logica" id="boton_logica" type="button" onclick="location.href='pantalla_logica.html'">Logica</button><button class="button_educacion" id="boton_educacion" type="button" onclick="location.href='pantalla_educacion.html'">Educacion</button><script type="text/javascript">var url_string=window.location.href; //
+		var url=new URL(url_string);
+		var usuario_url=url.searchParams.get("nombre");
 
-<body>
+		if (/^([0-9])*$/.test(usuario_url)) {
+			alert("Nombre invalido " + usuario_url) location.href="/"
+		}
 
-    <a class="button_atras" href="./index.html">ATRÁS</a>
-    <div>
-        <h2 id="usuario"></h2>
-    </div>
-
-    <h1>Selecciona la categoria</h1>
-    <button onclick="pantalla_logica()">LÓGICA</button>
-    <BR></BR>
-    <button onclick="pantalla_educacion()">EDUCACIÓN</button>
-
-
-    <script type="text/javascript">
-        var url_string = window.location.href; //
-        var url = new URL(url_string);
-        var usuario_url = url.searchParams.get("nombre");
-
-        if (/^([0-9])*$/.test(usuario_url)) {
-            alert("Nombre invalido " + usuario_url)
-            location.href = "/"
-        }
-        document.getElementById("usuario").innerHTML = "Hola, " + usuario_url;
-    </script>
-
-</body>
-
-</html>
+		document.getElementById("usuario").innerHTML="Hola, "+usuario_url;
+		</script></body></html>

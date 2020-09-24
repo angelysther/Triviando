@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href ="style.css" rel ="stylesheet">
+<style> body { background-color: #361352; }</style
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <title>Document</title>
     <script src="./script.js"></script>
 
@@ -11,51 +10,51 @@
 </head>
 
 <body onload="onloadFunction()">
-    <a class="button_atras" href="./pantalla_categoria.html">ATRÁS</a>
+   <button onclick="retornar_categoria()">ATRÁS</button>
     <h2 id="usuario"></h2>
+    <h1 style="font-size:35px;color:#FFFFFF";>¡Haz seleccionado la categoría lógica!</h1>
+    
+<div id="preguntauno">
+		<p class = "questions" style="font-size:45px;">¿Qué pasó ayer en París de 6 a 7?</p>
+		<input type = "radio" id = "mc" name = "question1" value = "Un paseo por el río sena">Un paseo por el río sena<br>
+		<input type = "radio" id = "mc" name = "question1" value = "Una hora"> Una hora<br>
+		<input type = "radio" id = "mc" name = "question1" value = "Coches camino a casa"> Coches camino a casa<br>
+    <input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarSegunda()" width="70" height="70"/>
+	</div>
+	<div id="preguntados">
+		<p class = "questions" style="font-size:45px;">¿Quién es el hermano del hijo de mi padre?</p>
+		<input type = "radio" id = "mc" name = "question2" value = "Mi hermano"> Mi hermano<br>
+		<input type = "radio" id = "mc" name = "question2" value = "Mi tío"> Mi tío<br>
+		<input type = "radio" id = "mc" name = "question2" value = "Mi primo"> Mi primo<br>
+    <input type="image" src="flecha_atras.png"  onclick="myFunctionAtras2()()" width="70" height="70"/>
+    <input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarTercera()" width="70" height="70"/>
+	</div>
 
+	<div id="preguntatres">
+		<p class = "questions" style="font-size:45px;">¿En qué lugar el jueves va antes que el miércoles?</p>
+		<input type = "radio" id = "mc" name = "question3" value = "En el diccionario"> En el diccionario<br>
+		<input type = "radio" id = "mc" name = "question3" value = "En el calendario">En el calendario<br>
+		<input type = "radio" id = "mc" name = "question3" value = "En los libros de historia">En los libros de historia<br>
+    <input type="image" src="flecha_atras.png"  onclick="myFunctionAtras3()" width="70" height="70"/>
+    <input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarCuarta()" width="70" height="70"/>
 
-    <div id="preguntauno">
-        <p class="questions">¿Qué pasó ayer en París de 6 a 7?</p>
-        <input type="radio" id="r_l_11" name="question1" value="Un paseo por el río sena"> Un paseo por el río sena<br>
-        <input type="radio" id="r_l_12" name="question1" value="Una hora"> Una hora<br>
-        <input type="radio" id="r_l_13" name="question1" value="Coches camino a casa"> Coches camino a casa<br>
-        <button onclick="myFunctionAvanzarSegunda()">Avanzar</button>
-    </div>
-    <div id="preguntados">
-        <p class="questions">Quien es el hermano del hijo de mi padre?</p>
-        <input type="radio" id="r_l_21" name="question2" value="Mi hermano"> Mi hermano<br>
-        <input type="radio" id="r_l_22" name="question2" value="Mi tío"> Mi tío<br>
-        <input type="radio" id="r_l_23" name="question2" value="Mi primo"> Mi primo<br>
-        <button onclick="myFunctionAtras2()">Atras</button>
-        <button onclick="myFunctionAvanzarTercera()">Avanzar</button>
-    </div>
-    <div id="preguntatres">
-        <p class="questions">¿En qué lugar el jueves va antes que el miércoles?</p>
-        <input type="radio" id="r_l_31" name="question3" value="En el diccionario"> En el diccionario<br>
-        <input type="radio" id="r_l_32" name="question3" value="En el calendario">En el calendario<br>
-        <input type="radio" id="r_l_33" name="question3" value="En los libros de historia">En los libros de historia<br>
-        <button onclick="myFunctionAtras3()">Atras</button>
-        <button onclick="myFunctionAvanzarCuarta()">Avanzar</button>
-    </div>
-    <div id="preguntacuatro">
-        <p class="questions">¿Qué meses tienen 28 días?</p>
-        <input type="radio" id="r_l_41" name="question4" value="Febrero y Diciembre">Febrero y Diciembre<br>
-        <input type="radio" id="r_l_42" name="question4" value="Febrero">Febrero<br>
-        <input type="radio" id="r_l_43" name="question4" value="Todos tienen 28 días">Todos tienen 28 días<br>
-        <button onclick="myFunctionAtras4()">Atras</button>
-        <button onclick="myFunctionAvanzarQuinta()">Avanzar</button>
-    </div>
+	</div>
+	<div id="preguntacuatro">
+		<p class = "questions" style="font-size:45px;">¿Qué meses tienen 28 días?</p>
+		<input type = "radio" id = "mc" name = "question4" value = "Febrero y Diciembre">Febrero y Diciembre<br>
+		<input type = "radio" id = "mc" name = "question4" value = "Febrero">Febrero<br>
+		<input type = "radio" id = "mc" name = "question4" value = "Todos tienen 28 días">Todos tienen 28 días<br>
+    <input type="image" src="flecha_atras.png"  onclick="myFunctionAtras4()" width="70" height="70"/>
+    <input type="image" src="flecha_adelante.png" onclick="myFunctionAvanzarQuinta()" width="70" height="70"/>
+  </div>
 
     <div id="preguntacinco">
-        <p class="questions">¿En que país se invento el sombrero Panameño?</p>
-        <input type="radio" id="r_l_51" name="question5" value="Panamá">Panamá<br>
-        <input type="radio" id="r_l_52" name="question5" value="Brasil">Brasil<br>
-        <input type="radio" id="r_l_53" name="question5" value="Ecuador">Ecuador<br>
-        <button onclick="myFunctionAtras5()">Atras</button>
-
-    </div>
-
+      <p class = "questions" style="font-size:45px;">¿En qué país se inventó el sombrero Panameño? </p>
+      <input type = "radio" id = "mc" name = "question5" value = "Panamá">Panamá<br>
+      <input type = "radio" id = "mc" name = "question5" value = "Brasil">Brasil<br>
+      <input type = "radio" id = "mc" name = "question5" value = "Ecuador">Ecuador<br>
+      <input type="image" src="flecha_atras.png"  onclick="myFunctionAtras5()" width="70" height="70"/>
+</div>
 
     <p>
         <input id="boton_resultado" type="button" value=" R E S U L T A D O " onclick="myFunctionAvanzarSexta()" />
@@ -72,7 +71,7 @@
             alert("Nombre invalido " + usuario_url)
             location.href = "/"
         }
-        document.getElementById("usuario").innerHTML = usuario_url + ", Haz seleccionado LÓGICA";
+        document.getElementById("usuario").innerHTML = usuario_url + ",";
     </script>
 </body>
 

@@ -91,6 +91,7 @@ function myFunctionAtras4() {
 function myFunctionAtras5() {
     document.getElementById("preguntacuatro").style.display = "block";
     document.getElementById("preguntacinco").style.display = "none";
+    document.getElementById("boton_resultado").style.display = "none";
 
 }
 
