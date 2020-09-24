@@ -1,34 +1,31 @@
+</html>
 <!DOCTYPE html>
-<link href ="style.css" rel ="stylesheet">
+<html lang="en">
+
 <head>
-  <style> body { background-color: #361352; }</style>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
-  <title>Triviando</title>
-  <script src="./script.js"></script>
-  <style>
-.label {
-color: white;
-padding: 8px;
-font-family: Quicksand;
-font-size:25px;
-font-weight: bold;
-margin-bottom:100px;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triviando</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand" rel="stylesheet">
+    <script src="./script.js"></script>
 </head>
+
 <body>
-  <h3 style="font-size:35px;color:#FFFFFF;";>Bienvenido a</h3>
-  <h1  style="font-size:100px;color:#E87C19;margin-top:30px;";>Triviando</h1>
-  <img src="logo.png" width="350" height="350">
+    <h3 id="h3_index">Bienvenido a</h3>
+    <h1 id="h1_index">Triviando</h1>
+    <img src="logo.png" alt="logo">
+
 
     <div>
         <form action="pantalla_categoria.html" method="GET">
-            <span class="label">Ingrese su nombre</span>
+            <label class="label" for="Nombre">Ingrese su nombre:</label>
             <BR></BR>
             <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
             <BR></BR>
             <input type="submit" value="INICIAR">
         </form>
+    </div>
 </body>
 
 </html>

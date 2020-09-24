@@ -55,9 +55,20 @@ function myFunctionAvanzarSexta() {
     if ((null != document.getElementById("r_l_53") && document.getElementById("r_l_53").checked) ||
         (null != document.getElementById("r_e_51") && document.getElementById("r_e_51").checked)) {
         resultados = resultados + 1;
-
     }
-    document.getElementById("preguntacinco").style.display = "none";
+    document.getElementById("atras").style.display = "none";
+    document.getElementById("atras1").style.display = "none";
+    document.getElementById("atras2").style.display = "none";
+    document.getElementById("atras3").style.display = "none";
+    document.getElementById("avanzar").style.display = "none";
+    document.getElementById("avanzar1").style.display = "none";
+    document.getElementById("avanzar2").style.display = "none";
+    document.getElementById("avanzar3").style.display = "none";
+    document.getElementById("preguntauno").style.display = "block";
+    document.getElementById("preguntados").style.display = "block";
+    document.getElementById("preguntatres").style.display = "block";
+    document.getElementById("preguntacuatro").style.display = "block";
+    document.getElementById("preguntacinco").style.display = "block";
     document.getElementById("boton_resultado").style.display = "none";
     console.log("resultado_5  " + resultados);
     document.getElementById("resultado").style.display = "block";
@@ -67,7 +78,6 @@ function myFunctionAvanzarSexta() {
 
 
 function myFunctionAtras() {
-
     document.getElementById("preguntauno").style.display = "block";
     document.getElementById("preguntados").style.display = "none";
 }
@@ -91,7 +101,6 @@ function myFunctionAtras4() {
 function myFunctionAtras5() {
     document.getElementById("preguntacuatro").style.display = "block";
     document.getElementById("preguntacinco").style.display = "none";
-    document.getElementById("boton_resultado").style.display = "none";
 
 }
 

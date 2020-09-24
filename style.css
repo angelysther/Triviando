@@ -1,98 +1,154 @@
-html {
-font-family:'Quicksand', sans-serif;
-text-align: center;
-
+body {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    background-color: #361352;
 }
 
 
-
-"font-size:30px color:#FFFFFF"   //subtitulo bienvenido
-"font-size:130px color:#E87C19" margin-top: 30px;    //titulo TRIVIANDO
-
-body {background-color: #361352;} //color pantalla
+/* Ingreso de nombre */
 
 .label {
-  color: white;
-  padding: 8px;
-  font-family: Quicksand;
-  font-size:15px;
-  font-weight: bold;
-  margin-bottom:100;
-
-}
-img {                      //editar logo de bienvenida
-  max-width: 100%;
-  height: auto;
-  margin-top: -60px;
+    color: white;
+    padding: 8px;
+    font-family: Quicksand;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 100;
 }
 
-input[type=submit]{
-  background-color: #D740FD;
-  font-weight: bold;
-  font-size:25px;
-  font-family: Quicksand;
-  border-radius:40px;
-  color: white;
-  padding:10px 60px;
-  margin-bottom:30px;
+
+/* Logo_index */
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: -60px;
 }
-input[type=text]{
-  padding: 7px 17px;
-  border-radius: 40px;
+
+#h3_index {
+    font-size: 35px;
+    color: #FFFFFF;
 }
-#boton_logica{
-  background-color: #D740FD;
-  font-weight: bold;
-  font-family: Quicksand;
-  font-size:25px;
-  border-radius:25px;
-  padding: 10px 60px;
-  color: white;
-  margin:150px 150px;
-  text-align: center;
+
+#h1_index {
+    font-size: 100px;
+    color: #E87C19;
+    margin-top: 30px;
 }
-#boton_educacion{
-  background-color: #5CDCF8;
-  font-weight: bold;
-  font-family: Quicksand;
-  font-size:25px;
-  border-radius:25px;
-  padding: 10px 60px;
-  color: white;
-  margin:150px 150px
+
+input[type=text] {
+    padding: 7px 17px;
+    border-radius: 40px;
 }
-#preguntauno{
-color:#E87C19;
-font-weight: bold;
-font-size:25px;
-text-align: center;
-margin-top: 60px;
+
+input[type=submit] {
+    background-color: #D740FD;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Quicksand;
+    border-radius: 40px;
+    color: white;
+    padding: 10px 60px;
+    margin-bottom: 30px;
 }
-#preguntados{
-color:#E87C19;
-font-weight: bold;
-font-size:25px;
-text-align: center;
-margin-top: 60px;
+
+
+/* Pantalla de categoria */
+
+#h1_categoria {
+    font-size: 60px;
+    color: #E87C19
 }
-#preguntatres{
-color:#E87C19;
-font-weight: bold;
-font-size:25px;
-text-align: center;
-margin-top: 60px;
+
+#boton_logica {
+    background-color: #D740FD;
+    font-weight: bold;
+    font-family: Quicksand;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px 60px;
+    color: white;
+    margin: 150px 150px;
+    text-align: center;
 }
-#preguntacuatro{
-color:#E87C19;
-font-weight: bold;
-font-size:25px;
-text-align: center;
-margin-top: 60px;
+
+#boton_educacion {
+    background-color: #5CDCF8;
+    font-weight: bold;
+    font-family: Quicksand;
+    font-size: 25px;
+    border-radius: 25px;
+    padding: 10px 60px;
+    color: white;
+    margin: 150px 150px
 }
-#preguntacinco{
-color:#E87C19;
-font-weight: bold;
-font-size:25px;
-text-align: center;
-margin-top: 60px;
+
+
+/* Pantalla de educación */
+
+.h2_educacion {
+    font-size: 35px;
+    color: #FFFFFF";
+
+}
+
+.h2_logica {
+    font-size: 35px;
+    color: #FFFFFF";
+
+}
+
+.flecha_avanza {
+    width: 100px;
+    height: 100px;
+}
+
+.flecha_atras {
+    width: 100px;
+    height: 100px;
+}
+
+.flecha_atras_categoria {
+    width: 20px;
+    height: 20px;
+}
+
+#preguntauno {
+    color: #E87C19;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#preguntados {
+    color: #E87C19;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#preguntatres {
+    color: #E87C19;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#preguntacuatro {
+    color: #E87C19;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#preguntacinco {
+    color: #E87C19;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 60px;
 }
