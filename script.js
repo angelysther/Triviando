@@ -74,6 +74,26 @@ function myFunctionAvanzarSexta() {
     document.getElementById("resultado").style.display = "block";
     document.getElementById("boton_retornar").style.display = "block";
     document.getElementById("resultado").innerHTML = "resultados: " + resultados;
+    switch (resultados) {
+        case 0:
+            alert('Ganar ya no es solo el resultado, es parte del proceso');
+            break;
+        case 1:
+            alert('Los campeones siguen jugando hasta que lo hacen bien');
+            break;
+        case 2:
+            alert('Los ganadores hacen lo que los perdedores no. Seguir intentando');
+            break;
+        case 3:
+            alert('Los ganadores piensan constantemente en términos de “yo puedo, lo haré y lo soy”.');
+            break;
+        case 4:
+            alert('No te rindas. Sufre ahora y vive el resto de tu vida como un campeón');
+            break;
+        default:
+            alert('Ganar no siempre significa ser el primero. Ganar significa que lo estás haciendo mejor de lo que nunca antes lo has hecho.FELICIDADES');
+    }
+
 }
 
 
